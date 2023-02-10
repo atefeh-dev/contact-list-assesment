@@ -11,8 +11,15 @@
 - You can view a contact's card by clicking on it.
 - Clicking on the close button of a card causes it to disappear.
 - Whenever another contact is clicked, the first clicked contact card disappears.
-- Mobile-friendly
+- Mobile-friendly `in mobile tab is scrollable`
 - When the API server is down for any reason, you will receive an error message and should try again.
+
+## :writing_hand: As a Next Step, I would like to suggest
+
+-Pagination by scrolling.
+-Right-to-left support.
+-You can search for a user by typing in their name.
+-Support dark Mode.
 
 ## :man_technologist: How to run
 
