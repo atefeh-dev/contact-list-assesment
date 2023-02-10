@@ -1,0 +1,35 @@
+$contactFontSize: 0.8rem;
+$contactPreviewPadding: 1rem;
+$contactInfoDataFlex: 0 0 calc(50% - 2rem);
+
+@mixin listPreview {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: $contactFontSize;
+}
+
+.contacts {
+  &__preview {
+    @include listPreview;
+    padding: $contactPreviewPadding;
+    column-gap: 57px;
+    position: relative;
+  }
+  &__noUserData {
+    @include listPreview;
+    color: gray;
+    align-items: center;
+    justify-content: center;
+    height: 245px;
+  }
+  &__infoData {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 2rem);
+    padding: 7px;
+    border-bottom: 1px dotted rgba(128, 128, 128, 0.313);
+    cursor: pointer;
+  }
+}
