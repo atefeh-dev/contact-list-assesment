@@ -2,7 +2,7 @@
 
 # :performing_arts: Contact List Web Application
 
-## :rocket: [Live DEMO](https://63ac0765108efb511e7c61d5--zesty-puppy-c2cafc.netlify.app/)
+## :rocket: [Live DEMO](https://silver-pie-abe8f1.netlify.app)
 
 ## 🕵️‍♀️ Behavior
 
