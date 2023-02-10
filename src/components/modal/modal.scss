@@ -5,7 +5,6 @@ $boxPadding: 1rem 1.06rem;
 $boxShadow: rgb(145 203 222 / 29%) 2px 1px 1px 5px,
   rgb(129 190 185 / 23%) 1px 3px 6px;
 $borderRadius: 5px;
-$robinWidth: 1.1rem;
 $robinPadding: 0.5rem 0.2rem;
 $robinBackground: radial-gradient(
   circle at 10% 20%,
@@ -61,7 +60,6 @@ $robbinPadding: 0.6rem 0.2rem;
       top: -9px;
       right: 10px;
       border-radius: $borderRadius;
-      width: $robinWidth;
       font-size: $robbinFont;
       color: white;
       padding: $robbinPadding;
