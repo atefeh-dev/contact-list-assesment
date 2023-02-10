@@ -1,0 +1,73 @@
+$boxShadow: rgb(25 190 190 / 28%) 0px 3px 0px 0px inset,
+  rgb(255 255 255 / 50%) 0px 0px 2px 0px inset;
+$grayColor: #efefef;
+$white: #fff;
+$tabBorder: 1px solid #c2b5b542;
+$radius: 12px;
+$tabFontSize: 0.9rem;
+$emptyColor: rgba(128, 128, 128, 0.689);
+$totalNumberColor: rgba(0, 0, 0, 0.551);
+$totalNumberMargin: 0 -6px -4px 0;
+$wrapperHeight: 356px;
+$wrapperBoxShadow: rgba(0, 0, 0, 0.15) 0px 3px 3px;
+
+.tabs {
+  border: none;
+
+  &__wrapper {
+    width: 100%;
+    min-height: $wrapperHeight;
+    background-color: $grayColor;
+    border-radius: $radius;
+    box-shadow: $wrapperBoxShadow;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow: auto;
+      background: $white;
+    }
+  }
+  &__tab {
+    width: 46.4px;
+    height: 38px;
+    background-color: $grayColor;
+    border: $tabBorder;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    font-size: $tabFontSize;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($grayColor, 5%);
+    }
+    &:focus-visible {
+      outline: none;
+    }
+
+    &--active {
+      box-shadow: $boxShadow;
+      border-bottom: none;
+    }
+
+    &--empty {
+      color: $emptyColor;
+    }
+
+    &--title {
+      display: flex;
+      justify-content: space-around;
+    }
+    &--count {
+      font-size: 11px;
+      align-self: flex-end;
+      color: $totalNumberColor;
+      margin: $totalNumberMargin;
+    }
+  }
+}
