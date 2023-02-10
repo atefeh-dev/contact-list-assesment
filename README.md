@@ -37,7 +37,7 @@ Afterwards you can run:
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Unit tests
+## :ninja: Unit tests
 
 you can run:
 
