@@ -33,7 +33,7 @@ $wrapperBoxShadow: rgba(0, 0, 0, 0.15) 0px 3px 3px;
   }
   &__tab {
     width: 46.4px;
-    height: 38px;
+    aspect-ratio: 1;
     background-color: $grayColor;
     border: $tabBorder;
     border-top-left-radius: $radius;
